@@ -78,16 +78,25 @@
 <body class="cuerpo">
 
   <header class="encabezado">
-    <img src="https://copilot.microsoft.com/th/id/BCO.1247df5e-9a03-4b2c-b241-4f73a644c128.png" alt="Logo Gobierno de México" class="logo">
+    <img src="" alt="Logo Gobierno de México" class="logo">
     <h1 class="titulo">Trámites del Gobierno de México</h1>
   </header>
 
+
+
+
+
+
+<!-- Otra Pagina -->
+
+<div id="Tramites" class="tabcontent">
+  <div>
   <nav class="navegacion">
-    <a href="#" class="enlace">Inicio</a>
-    <a href="#" class="enlace">Trámites</a>
-    <a href="#" class="enlace">Servicios</a>
-    <a href="#" class="enlace">Contacto</a>
-  </nav>
+    <button class="tablink" onclick="openPage('Inicio', this,)" id="defaultOpen">Inicio</button>
+    <button class="tablink" onclick="openPage('Tramites', this,)">Trámites</button>
+    <button class="tablink" onclick="openPage('Contacto', this,)">Contactos</button>
+</div>
+
 
   <main class="principal">
     <section class="tramite">
@@ -104,9 +113,90 @@
     </section>
   </main>
 
+
+
+    <footer class="pie">
+    <p class="pie-texto">&copy; 2025 Vanglar . Todos los derechos reservados.</p>
+  </footer>
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- Cuerpo De La Pagina De Inicio-->
+<div id="Inicio" class="tabcontent">
+  <nav class="navegacion">
+    <button class="tablink" onclick="openPage('Inicio', this,)" id="defaultOpen">Inicio</button>
+    <button class="tablink" onclick="openPage('Tramites', this,)">Trámites</button>
+    <button class="tablink" onclick="openPage('Contacto', this,)">Contacto</button>
+  </nav>
+
+
+
   <footer class="pie">
     <p class="pie-texto">&copy; 2025 Vanglar . Todos los derechos reservados.</p>
   </footer>
+</div>
+
+
+<!-- Otra Pagina -->
+
+<div id="Contacto" class="tabcontent">
+  <div>
+  <nav class="navegacion">
+    <button class="tablink" onclick="openPage('Inicio', this,)" id="defaultOpen">Inicio</button>
+    <button class="tablink" onclick="openPage('Tramites', this,)">Trámites</button>
+    <button class="tablink" onclick="openPage('Contacto', this,)">Contactos</button>
+</div>
+
+
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+
+
+
+
+    <footer class="pie">
+    <p class="pie-texto">&copy; 2025 Vanglar . Todos los derechos reservados.</p>
+  </footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script
+
 
 </body>
 </html>
