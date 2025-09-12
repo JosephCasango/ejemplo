@@ -3,8 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
   <title>Trámites México Privado</title>
-  <link rel="stylesheet" href="estilos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
 
   <style>
     .cuerpo {
@@ -47,10 +59,14 @@
 
 .tramite {
   background-color: white;
-  border-left: 5px solid #006847;
+border: 1px solid transparent;
+  border-left: 10px solid #006847;
   margin-bottom: 20px;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+          width: 800px;
+
 }
 
 .tramite-titulo {
@@ -79,7 +95,7 @@
 
   <header class="encabezado">
     <img src="" alt="Logo Gobierno de México" class="logo">
-    <h1 class="titulo">Trámites del Gobierno de México</h1>
+    <h1 class="titulo">Vanglare</h1>
   </header>
 
 
@@ -94,31 +110,68 @@
   <nav class="navegacion">
     <button class="tablink" onclick="openPage('Inicio', this,)" id="defaultOpen">Inicio</button>
     <button class="tablink" onclick="openPage('Tramites', this,)">Trámites</button>
-    <button class="tablink" onclick="openPage('Contacto', this,)">Contactos</button>
+    <button class="tablink" onclick="openPage('Contacto', this,)">Nosotros</button>
 </div>
 
+<!-- BUSCADOR -->
+<div class="container">
+  <Br>
+  <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
+  <div id="myDIV">
 
+<center>
   <main class="principal">
-    <section class="tramite">
+
+    <button class="tramite"><section>   
       <h2 class="tramite-titulo">Acta de nacimiento</h2>
       <p class="tramite-descripcion">Solicita tu acta de nacimiento en línea con respaldo de nuestra empresa aliada.</p>
-    </section>
-    <section class="tramite">
+   </button></section>
+<br>
+     <button class="tramite"><section>
       <h2 class="tramite-titulo">CURP</h2>
       <p class="tramite-descripcion">Consulta o imprime tu CURP con asistencia técnica privada.</p>
-    </section>
-    <section class="tramite">
+    </button></section>
+<br>
+     <button class="tramite"><section>
       <h2 class="tramite-titulo">Pasaporte</h2>
       <p class="tramite-descripcion">Agenda tu cita para tramitar el pasaporte mexicano con atención personalizada.</p>
-    </section>
-  </main>
+    </button></section>
+  <br>
 
+      <button class="tramite"><section>   
+      <h2 class="tramite-titulo">Acta de Matrimonio</h2>
+      <p class="tramite-descripcion">Solicita tu acta de nacimiento en línea con respaldo de nuestra empresa aliada.</p>
+   </button></section>
+<br>
+     <button class="tramite"><section>
+      <h2 class="tramite-titulo">Acta de Difuncion</h2>
+      <p class="tramite-descripcion">Consulta o imprime tu CURP con asistencia técnica privada.</p>
+    </button></section>
+<br>
+     <button class="tramite"><section>
+      <h2 class="tramite-titulo">RFC</h2>
+      <p class="tramite-descripcion">Agenda tu cita para tramitar el pasaporte mexicano con atención personalizada.</p>
+    </button></section>
 
+  </main></center>
+
+ </div>
+</div>
 
     <footer class="pie">
-    <p class="pie-texto">&copy; 2025 Vanglar . Todos los derechos reservados.</p>
+    <p class="pie-texto">&copy; 2025 Vanglare . Todos los derechos reservados.</p>
   </footer>
 </div>
+
+
+
+
+
+
+
+
+
+<!-- Otra Pagina -->
 
 
 
@@ -133,15 +186,43 @@
   <nav class="navegacion">
     <button class="tablink" onclick="openPage('Inicio', this,)" id="defaultOpen">Inicio</button>
     <button class="tablink" onclick="openPage('Tramites', this,)">Trámites</button>
-    <button class="tablink" onclick="openPage('Contacto', this,)">Contacto</button>
+    <button class="tablink" onclick="openPage('Contacto', this,)">Nosotros</button>
   </nav>
 
+<center>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.3914404585694!2d-116.82519206751402!3d32.459051026002285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d93e743f2e3bd7%3A0xbf19e069ae61d678!2sUniversidad%20Tecnol%C3%B3gica%20de%20Tijuana!5e1!3m2!1ses-419!2smx!4v1757609143534!5m2!1ses-419!2smx" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
 
 
   <footer class="pie">
-    <p class="pie-texto">&copy; 2025 Vanglar . Todos los derechos reservados.</p>
+    <p class="pie-texto">&copy; 2025 Vanglare . Todos los derechos reservados.</p>
   </footer>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Otra Pagina -->
@@ -151,7 +232,7 @@
   <nav class="navegacion">
     <button class="tablink" onclick="openPage('Inicio', this,)" id="defaultOpen">Inicio</button>
     <button class="tablink" onclick="openPage('Tramites', this,)">Trámites</button>
-    <button class="tablink" onclick="openPage('Contacto', this,)">Contactos</button>
+    <button class="tablink" onclick="openPage('Contacto', this,)">Nosotros</button>
 </div>
 
 
@@ -162,7 +243,7 @@
 
 
     <footer class="pie">
-    <p class="pie-texto">&copy; 2025 Vanglar . Todos los derechos reservados.</p>
+    <p class="pie-texto">&copy; 2025 Vanglare . Todos los derechos reservados.</p>
   </footer>
 </div>
 
@@ -193,10 +274,25 @@ function openPage(pageName,elmnt,color) {
   elmnt.style.backgroundColor = color;
 }
 
-// Get the element with id="defaultOpen" and click on it
+
 document.getElementById("defaultOpen").click();
+
+
+
+// Buscador
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+
+
 </script
 
-
 </body>
+
 </html>
