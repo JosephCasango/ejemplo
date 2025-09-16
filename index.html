@@ -55,10 +55,12 @@
 
 .principal {
   padding: 20px;
+   width:100%; 
+  height:100%;
 }
 
 .tramite {
-max-width: 100%;
+
         height: auto;
   background-color: white;
 border: 1px solid transparent;
@@ -92,6 +94,117 @@ border: 1px solid transparent;
 
 .pie-texto {
   margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CuadroOri {
+    display: flex; /* ¡Esta es la propiedad clave! Activa Flexbox. */
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 8px;
+    margin: 30px;
+}
+
+.CuadroOne {
+    flex: 1px; /* Permite que cada contenido ocupe el mismo espacio. */
+
+}
+
+
+
+.Cuadro {
+
+    height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  max-width: 300px;
+  background-color: #fff;
+  color: #212121;
+}
+
+.ImagenCu {
+      
+
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  background-color: rgb(204, 0, 255);
+  background-image: linear-gradient(to right, rgb(255, 174, 0), rgb(204, 0, 255));
+}
+
+.ContenidoCu {
+
+
+  padding: 4rem;
+  text-align: center;
+}
+
+.TextBig {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.TextBig {
+  margin-top: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.TextBig span:first-child {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.TextBig span:last-child {
+  margin-top: 0.5rem;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.MasInf{
+  margin-top: 1rem;
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.TextVan{
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(156, 163, 175, 1);
 }
 
   </style>
@@ -193,10 +306,79 @@ border: 1px solid transparent;
     <button class="tablink" onclick="openPage('Tramites', this,)">Trámites</button>
     <button class="tablink" onclick="openPage('Contacto', this,)">Nosotros</button>
   </nav>
+
+
+
+
+
+<br>
+
+  <div class="CuadroOri">
+        <div class="CuadroOne">
+
+<!-- Cuadros de inicio -->
+<div class="Cuadro">
+  <div class="ImagenCu"></div>
+  <div class="ContenidoCu">
+ 
+
+    <div class="TextBig">
+      <span>
+        Tramites
+        Certificados
+      </span>
+      <span>Tramites .....</span>
+    </div>
+
+    <a class="MasInf" href="">
+      Mas informacion
+    </a>
+
+    <p class="TextVan">
+      Vanglare
+    </p>
+  </div>
+</div></div>
+
+
+
+      <div class="contenido">
+<div class="Cuadro">
+  <div class="ImagenCu"></div>
+  <div class="ContenidoCu">
+ 
+
+    <div class="TextBig">
+      <span>
+        Tramites
+        Certificados
+      </span>
+      <span>Tramites .....</span>
+    </div>
+
+    <a class="MasInf" href="">
+      Mas informacion
+    </a>
+
+    <p class="TextVan">
+      Vanglare
+    </p>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
 <br>
 <center>
-<iframe class="Google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.3914404585694!2d-116.82519206751402!3d32.459051026002285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d93e743f2e3bd7%3A0xbf19e069ae61d678!2sUniversidad%20Tecnol%C3%B3gica%20de%20Tijuana!5e1!3m2!1ses-419!2smx!4v1757609143534!5m2!1ses-419!2smx" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="90%" height="170%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></center>
-
+<iframe class="Google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.3914404585694!2d-116.82519206751402!3d32.459051026002285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d93e743f2e3bd7%3A0xbf19e069ae61d678!2sUniversidad%20Tecnol%C3%B3gica%20de%20Tijuana!5e1!3m2!1ses-419!2smx!4v1757609143534!5m2!1ses-419!2smx" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="95%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></center>
 
   <footer class="pie">
     <p class="pie-texto">&copy; 2025 Vanglare . Todos los derechos reservados.</p>
